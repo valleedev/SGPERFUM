@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-bs-theme="light"
+  data-menu-color="brand"
+  data-topbar-color="light"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Datatables | Dashtrap - Responsive Bootstrap 5 Admin Dashboard
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+      name="description"
+    />
+    <meta content="Myra Studio" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- third party css -->
+    <link
+      href="assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/libs/datatables.net-select-bs5/css//select.bootstrap5.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="assets/css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Begin page -->
+    <div class="layout-wrapper">
+      <!-- ========== Left Sidebar ========== -->
+      <div class="main-menu">
+        <!-- Brand Logo -->
+        <div class="logo-box">
+          <!-- Brand Logo Light -->
+          <a href="index.html" class="logo-light">
+            <img
+              src="assets/images/logo-light.png"
+              alt="logo"
+              class="logo-lg"
+              height="28"
+            />
+            <img
+              src="assets/images/logo-sm.png"
+              alt="small logo"
+              class="logo-sm"
+              height="28"
+            />
+          </a>
+
+          <!-- Brand Logo Dark -->
+          <a href="index.html" class="logo-dark">
+            <img
+              src="assets/images/logo-dark.png"
+              alt="dark logo"
+              class="logo-lg"
+              height="28"
+            />
+            <img
+              src="assets/images/logo-sm.png"
+              alt="small logo"
+              class="logo-sm"
+              height="28"
+            />
+          </a>
+        </div>
+
+        <!--- Menu -->
+        <div data-simplebar>
+          <ul class="app-menu">
+            <li class="menu-title">Menu</li>
+
+            <li class="menu-item">
+              <a href="index.html" class="menu-link waves-effect waves-light">
+                <span class="menu-icon"><i class="bx bx-home-smile"></i></span>
+                <span class="menu-text"> Dashboards </span>
+              </a>
+            </li>
+
+            <li class="menu-title">Navegación</li>
+
+            <li class="menu-item">
+              <a
+                href="clientes.html"
+                class="menu-link waves-effect waves-light"
+              >
+                <span class="menu-icon"
+                  ><i class="bx bxs-user-account"></i
+                ></span>
+                <span class="menu-text"> Clientes </span>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="#menuExpages"
+                data-bs-toggle="collapse"
+                class="menu-link waves-effect waves-light"
+              >
+                <span class="menu-icon"
+                  ><i class="bx bxl-product-hunt"></i
+                ></span>
+                <span class="menu-text"> Gestión de perfumes </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="menuExpages">
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="catalogo-perfumes.html" class="menu-link">
+                      <span class="menu-text">catálogo de Productos</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pages-invoice.html" class="menu-link">
+                      <span class="menu-text">Control de Inventario</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="pages-login.html" class="menu-link">
+                      <span class="menu-text">Precios y Promociones</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="#menuComponentsui"
+                data-bs-toggle="collapse"
+                class="menu-link waves-effect waves-light"
+              >
+                <span class="menu-icon"
+                  ><i class="bx bxs-folder-open"></i
+                ></span>
+                <span class="menu-text"> Gestión de Existencias </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="menuComponentsui">
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="ui-alerts.html" class="menu-link">
+                      <span class="menu-text">Alerts</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-buttons.html" class="menu-link">
+                      <span class="menu-text">Buttons</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-cards.html" class="menu-link">
+                      <span class="menu-text">Cards</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-carousel.html" class="menu-link">
+                      <span class="menu-text">Carousel</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-dropdowns.html" class="menu-link">
+                      <span class="menu-text">Dropdowns</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-video.html" class="menu-link">
+                      <span class="menu-text">Embed Video</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-general.html" class="menu-link">
+                      <span class="menu-text">General UI</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-grid.html" class="menu-link">
+                      <span class="menu-text">Grid</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-images.html" class="menu-link">
+                      <span class="menu-text">Images</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-list-group.html" class="menu-link">
+                      <span class="menu-text">List Group</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-modals.html" class="menu-link">
+                      <span class="menu-text">Modals</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-offcanvas.html" class="menu-link">
+                      <span class="menu-text">Offcanvas</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-placeholders.html" class="menu-link">
+                      <span class="menu-text">Placeholders</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-progress.html" class="menu-link">
+                      <span class="menu-text">Progress</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-spinners.html" class="menu-link">
+                      <span class="menu-text">Spinners</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-tabs-accordions.html" class="menu-link">
+                      <span class="menu-text">Tabs & Accordions</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-tooltips-popovers.html" class="menu-link">
+                      <span class="menu-text">Tooltips & Popovers</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ui-typography.html" class="menu-link">
+                      <span class="menu-text">Typography</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="#menuExtendedui"
+                data-bs-toggle="collapse"
+                class="menu-link waves-effect waves-light"
+              >
+                <span class="menu-icon"><i class="bx bxs-report"></i></span>
+                <span class="menu-text"> Reportes </span>
+              </a>
+              <div class="collapse" id="menuExtendedui">
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="components-range-slider.html" class="menu-link">
+                      <span class="menu-text">Range Slider</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components-sweet-alert.html" class="menu-link">
+                      <span class="menu-text">Sweet Alert</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="components-loading-buttons.html" class="menu-link">
+                      <span class="menu-text">Loading Buttons</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="menu-item">
+              <a
+                href="#menuIcons"
+                data-bs-toggle="collapse"
+                class="menu-link waves-effect waves-light"
+              >
+                <span class="menu-icon"><i class="bx bxs-cog"></i></span>
+                <span class="menu-text"> Configuración </span>
+                <span class="menu-arrow"></span>
+              </a>
+              <div class="collapse" id="menuIcons">
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="icons-feather.html" class="menu-link">
+                      <span class="menu-text">Feather Icons</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="icons-mdi.html" class="menu-link">
+                      <span class="menu-text">Material Design Icons</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="icons-dripicons.html" class="menu-link">
+                      <span class="menu-text">Dripicons</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Start Page Content here -->
+      <div class="page-content">
+        <!-- ========== Topbar Start ========== -->
+        <div class="navbar-custom">
+          <div class="topbar">
+            <div class="topbar-menu d-flex align-items-center gap-lg-2 gap-1">
+              <!-- Brand Logo -->
+              <div class="logo-box">
+                <!-- Brand Logo Light -->
+                <a href="index.html" class="logo-light">
+                  <img
+                    src="assets/images/logo-light.png"
+                    alt="logo"
+                    class="logo-lg"
+                    height="22"
+                  />
+                  <img
+                    src="assets/images/logo-sm.png"
+                    alt="small logo"
+                    class="logo-sm"
+                    height="22"
+                  />
+                </a>
+
+                <!-- Brand Logo Dark -->
+                <a href="index.html" class="logo-dark">
+                  <img
+                    src="assets/images/logo-dark.png"
+                    alt="dark logo"
+                    class="logo-lg"
+                    height="22"
+                  />
+                  <img
+                    src="assets/images/logo-sm.png"
+                    alt="small logo"
+                    class="logo-sm"
+                    height="22"
+                  />
+                </a>
+              </div>
+
+              <!-- Sidebar Menu Toggle Button -->
+              <button class="button-toggle-menu">
+                <i class="mdi mdi-menu"></i>
+              </button>
+            </div>
+
+            <ul class="topbar-menu d-flex align-items-center gap-4">
+              <li class="d-none d-md-inline-block">
+                <a class="nav-link" href="" data-bs-toggle="fullscreen">
+                  <i class="mdi mdi-fullscreen font-size-24"></i>
+                </a>
+              </li>
+
+              <li class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle waves-effect waves-light arrow-none"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <i class="mdi mdi-magnify font-size-24"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-animated dropdown-menu-end dropdown-lg p-0"
+                >
+                  <form class="p-3">
+                    <input
+                      type="search"
+                      class="form-control"
+                      placeholder="Search ..."
+                      aria-label="Recipient's username"
+                    />
+                  </form>
+                </div>
+              </li>
+
+              <li class="dropdown notification-list">
+                <a
+                  class="nav-link dropdown-toggle waves-effect waves-light arrow-none"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <i class="mdi mdi-bell font-size-24"></i>
+                  <span class="badge bg-danger rounded-circle noti-icon-badge"
+                    >9</span
+                  >
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-end dropdown-menu-animated dropdown-lg py-0"
+                >
+                  <div
+                    class="p-2 border-top-0 border-start-0 border-end-0 border-dashed border"
+                  >
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h6 class="m-0 font-size-16 fw-semibold">
+                          Notification
+                        </h6>
+                      </div>
+                      <div class="col-auto">
+                        <a
+                          href="javascript: void(0);"
+                          class="text-dark text-decoration-underline"
+                        >
+                          <small>Clear All</small>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="px-1" style="max-height: 300px;" data-simplebar>
+                    <h5 class="text-muted font-size-13 fw-normal mt-2">
+                      Today
+                    </h5>
+                    <!-- item-->
+
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item p-0 notify-item card unread-noti shadow-none mb-1"
+                    >
+                      <div class="card-body">
+                        <span class="float-end noti-close-btn text-muted"
+                          ><i class="mdi mdi-close"></i
+                        ></span>
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0">
+                            <div class="notify-icon bg-primary">
+                              <i class="mdi mdi-comment-account-outline"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 text-truncate ms-2">
+                            <h5
+                              class="noti-item-title fw-semibold font-size-14"
+                            >
+                              Datacorp
+                              <small class="fw-normal text-muted ms-1"
+                                >1 min ago</small
+                              >
+                            </h5>
+                            <small class="noti-item-subtitle text-muted"
+                              >Caleb Flakelar commented on Admin</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item p-0 notify-item card read-noti shadow-none mb-1"
+                    >
+                      <div class="card-body">
+                        <span class="float-end noti-close-btn text-muted"
+                          ><i class="mdi mdi-close"></i
+                        ></span>
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0">
+                            <div class="notify-icon bg-info">
+                              <i class="mdi mdi-account-plus"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 text-truncate ms-2">
+                            <h5
+                              class="noti-item-title fw-semibold font-size-14"
+                            >
+                              Admin
+                              <small class="fw-normal text-muted ms-1"
+                                >1 hours ago</small
+                              >
+                            </h5>
+                            <small class="noti-item-subtitle text-muted"
+                              >New user registered</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <h5 class="text-muted font-size-13 fw-normal mt-0">
+                      Yesterday
+                    </h5>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item p-0 notify-item card read-noti shadow-none mb-1"
+                    >
+                      <div class="card-body">
+                        <span class="float-end noti-close-btn text-muted"
+                          ><i class="mdi mdi-close"></i
+                        ></span>
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0">
+                            <div class="notify-icon">
+                              <img
+                                src="assets/images/users/avatar-2.jpg"
+                                class="img-fluid rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 text-truncate ms-2">
+                            <h5
+                              class="noti-item-title fw-semibold font-size-14"
+                            >
+                              Cristina Pride
+                              <small class="fw-normal text-muted ms-1"
+                                >1 day ago</small
+                              >
+                            </h5>
+                            <small class="noti-item-subtitle text-muted"
+                              >Hi, How are you? What about our next
+                              meeting</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <h5 class="text-muted font-size-13 fw-normal mt-0">
+                      30 Dec 2021
+                    </h5>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item p-0 notify-item card read-noti shadow-none mb-1"
+                    >
+                      <div class="card-body">
+                        <span class="float-end noti-close-btn text-muted"
+                          ><i class="mdi mdi-close"></i
+                        ></span>
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0">
+                            <div class="notify-icon bg-primary">
+                              <i class="mdi mdi-comment-account-outline"></i>
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 text-truncate ms-2">
+                            <h5
+                              class="noti-item-title fw-semibold font-size-14"
+                            >
+                              Datacorp
+                            </h5>
+                            <small class="noti-item-subtitle text-muted"
+                              >Caleb Flakelar commented on Admin</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item p-0 notify-item card read-noti shadow-none mb-1"
+                    >
+                      <div class="card-body">
+                        <span class="float-end noti-close-btn text-muted"
+                          ><i class="mdi mdi-close"></i
+                        ></span>
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0">
+                            <div class="notify-icon">
+                              <img
+                                src="assets/images/users/avatar-4.jpg"
+                                class="img-fluid rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1 text-truncate ms-2">
+                            <h5
+                              class="noti-item-title fw-semibold font-size-14"
+                            >
+                              Karen Robinson
+                            </h5>
+                            <small class="noti-item-subtitle text-muted"
+                              >Wow ! this admin looks good and awesome
+                              design</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+
+                    <div class="text-center">
+                      <i
+                        class="mdi mdi-dots-circle mdi-spin text-muted h3 mt-0"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <!-- All-->
+                  <a
+                    href="javascript:void(0);"
+                    class="dropdown-item text-center text-primary notify-item border-top border-light py-2"
+                  >
+                    View All
+                  </a>
+                </div>
+              </li>
+
+              <li class="nav-link" id="theme-mode">
+                <i class="bx bx-moon font-size-24"></i>
+              </li>
+
+              <li class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="false"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/images/users/avatar-4.jpg"
+                    alt="user-image"
+                    class="rounded-circle"
+                  />
+                  <span class="ms-1 d-none d-md-inline-block">
+                    Jonathan A. <i class="mdi mdi-chevron-down"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
+                  <!-- item-->
+                  <div class="dropdown-header noti-title">
+                    <h6 class="text-overflow m-0">Bienvenido !</h6>
+                  </div>
+
+                  <!-- item-->
+                  <a
+                    href="javascript:void(0);"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="fe-user"></i>
+                    <span>Mi Cuenta</span>
+                  </a>
+
+                  <!-- item-->
+                  <a
+                    href="javascript:void(0);"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="fe-settings"></i>
+                    <span>Configuración</span>
+                  </a>
+
+                  <!-- item-->
+                  <a
+                    href="pages-lock-screen.html"
+                    class="dropdown-item notify-item"
+                  >
+                    <i class="fe-lock"></i>
+                    <span>Pantalla de bloqueo</span>
+                  </a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <!-- item-->
+                  <a href="pages-login.html" class="dropdown-item notify-item">
+                    <i class="fe-log-out"></i>
+                    <span>Salir</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ========== Topbar End ========== -->
+
+        <div class="px-3">
+          <!-- Start Content-->
+          <div class="container-fluid">
+            <!-- start page title -->
+            <div class="py-3 py-lg-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h4 class="page-title mb-0">Clientes</h4>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-none d-lg-block">
+                    <ol class="breadcrumb m-0 float-end">
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Perfumeria</a>
+                      </li>
+                      <li class="breadcrumb-item active">Clientes</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="header-title">
+                      Clientes registrados en el Sistema
+                    </h4>
+
+                    <table
+                      id="basic-datatable"
+                      class="table dt-responsive nowrap w-100"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Documento</th>
+                          <th>Nombre</th>
+                          <th>Apellido</th>
+                          <th>teléfono</th>
+                          <th>Valor Comprado</th>
+                          <th>Decuento</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>1036160161</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                        </tr>
+                        <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009/01/12</td>
+                          <td>$86,000</td>
+                        </tr>
+                        <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                        </tr>
+                        <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008/11/28</td>
+                          <td>$162,700</td>
+                        </tr>
+                        <tr>
+                          <td>Brielle Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012/12/02</td>
+                          <td>$372,000</td>
+                        </tr>
+                        <tr>
+                          <td>Herrod Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012/08/06</td>
+                          <td>$137,500</td>
+                        </tr>
+                        <tr>
+                          <td>Rhona Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010/10/14</td>
+                          <td>$327,900</td>
+                        </tr>
+                        <tr>
+                          <td>Colleen Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009/09/15</td>
+                          <td>$205,500</td>
+                        </tr>
+                        <tr>
+                          <td>Sonya Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008/12/13</td>
+                          <td>$103,600</td>
+                        </tr>
+                        <tr>
+                          <td>Jena Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008/12/19</td>
+                          <td>$90,560</td>
+                        </tr>
+                        <tr>
+                          <td>Quinn Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013/03/03</td>
+                          <td>$342,000</td>
+                        </tr>
+                        <tr>
+                          <td>Charde Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008/10/16</td>
+                          <td>$470,600</td>
+                        </tr>
+                        <tr>
+                          <td>Haley Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012/12/18</td>
+                          <td>$313,500</td>
+                        </tr>
+                        <tr>
+                          <td>Tatyana Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010/03/17</td>
+                          <td>$385,750</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012/11/27</td>
+                          <td>$198,500</td>
+                        </tr>
+                        <tr>
+                          <td>Paul Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010/06/09</td>
+                          <td>$725,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gloria Little</td>
+                          <td>Systems Administrator</td>
+                          <td>New York</td>
+                          <td>59</td>
+                          <td>2009/04/10</td>
+                          <td>$237,500</td>
+                        </tr>
+                        <tr>
+                          <td>Bradley Greer</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>41</td>
+                          <td>2012/10/13</td>
+                          <td>$132,000</td>
+                        </tr>
+                        <tr>
+                          <td>Dai Rios</td>
+                          <td>Personnel Lead</td>
+                          <td>Edinburgh</td>
+                          <td>35</td>
+                          <td>2012/09/26</td>
+                          <td>$217,500</td>
+                        </tr>
+                        <tr>
+                          <td>Jenette Caldwell</td>
+                          <td>Development Lead</td>
+                          <td>New York</td>
+                          <td>30</td>
+                          <td>2011/09/03</td>
+                          <td>$345,000</td>
+                        </tr>
+                        <tr>
+                          <td>Yuri Berry</td>
+                          <td>Chief Marketing Officer (CMO)</td>
+                          <td>New York</td>
+                          <td>40</td>
+                          <td>2009/06/25</td>
+                          <td>$675,000</td>
+                        </tr>
+                        <tr>
+                          <td>Caesar Vance</td>
+                          <td>Pre-Sales Support</td>
+                          <td>New York</td>
+                          <td>21</td>
+                          <td>2011/12/12</td>
+                          <td>$106,450</td>
+                        </tr>
+                        <tr>
+                          <td>Doris Wilder</td>
+                          <td>Sales Assistant</td>
+                          <td>Sidney</td>
+                          <td>23</td>
+                          <td>2010/09/20</td>
+                          <td>$85,600</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2009/10/09</td>
+                          <td>$1,200,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin Joyce</td>
+                          <td>Developer</td>
+                          <td>Edinburgh</td>
+                          <td>42</td>
+                          <td>2010/12/22</td>
+                          <td>$92,575</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer Chang</td>
+                          <td>Regional Director</td>
+                          <td>Singapore</td>
+                          <td>28</td>
+                          <td>2010/11/14</td>
+                          <td>$357,650</td>
+                        </tr>
+                        <tr>
+                          <td>Brenden Wagner</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>28</td>
+                          <td>2011/06/07</td>
+                          <td>$206,850</td>
+                        </tr>
+                        <tr>
+                          <td>Fiona Green</td>
+                          <td>Chief Operating Officer (COO)</td>
+                          <td>San Francisco</td>
+                          <td>48</td>
+                          <td>2010/03/11</td>
+                          <td>$850,000</td>
+                        </tr>
+                        <tr>
+                          <td>Shou Itou</td>
+                          <td>Regional Marketing</td>
+                          <td>Tokyo</td>
+                          <td>20</td>
+                          <td>2011/08/14</td>
+                          <td>$163,000</td>
+                        </tr>
+                        <tr>
+                          <td>Michelle House</td>
+                          <td>Integration Specialist</td>
+                          <td>Sidney</td>
+                          <td>37</td>
+                          <td>2011/06/02</td>
+                          <td>$95,400</td>
+                        </tr>
+                        <tr>
+                          <td>Suki Burks</td>
+                          <td>Developer</td>
+                          <td>London</td>
+                          <td>53</td>
+                          <td>2009/10/22</td>
+                          <td>$114,500</td>
+                        </tr>
+                        <tr>
+                          <td>Prescott Bartlett</td>
+                          <td>Technical Author</td>
+                          <td>London</td>
+                          <td>27</td>
+                          <td>2011/05/07</td>
+                          <td>$145,000</td>
+                        </tr>
+                        <tr>
+                          <td>Gavin Cortez</td>
+                          <td>Team Leader</td>
+                          <td>San Francisco</td>
+                          <td>22</td>
+                          <td>2008/10/26</td>
+                          <td>$235,500</td>
+                        </tr>
+                        <tr>
+                          <td>Martena Mccray</td>
+                          <td>Post-Sales support</td>
+                          <td>Edinburgh</td>
+                          <td>46</td>
+                          <td>2011/03/09</td>
+                          <td>$324,050</td>
+                        </tr>
+                        <tr>
+                          <td>Unity Butler</td>
+                          <td>Marketing Designer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/12/09</td>
+                          <td>$85,675</td>
+                        </tr>
+                        <tr>
+                          <td>Howard Hatfield</td>
+                          <td>Office Manager</td>
+                          <td>San Francisco</td>
+                          <td>51</td>
+                          <td>2008/12/16</td>
+                          <td>$164,500</td>
+                        </tr>
+                        <tr>
+                          <td>Hope Fuentes</td>
+                          <td>Secretary</td>
+                          <td>San Francisco</td>
+                          <td>41</td>
+                          <td>2010/02/12</td>
+                          <td>$109,850</td>
+                        </tr>
+                        <tr>
+                          <td>Vivian Harrell</td>
+                          <td>Financial Controller</td>
+                          <td>San Francisco</td>
+                          <td>62</td>
+                          <td>2009/02/14</td>
+                          <td>$452,500</td>
+                        </tr>
+                        <tr>
+                          <td>Timothy Mooney</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>37</td>
+                          <td>2008/12/11</td>
+                          <td>$136,200</td>
+                        </tr>
+                        <tr>
+                          <td>Jackson Bradshaw</td>
+                          <td>Director</td>
+                          <td>New York</td>
+                          <td>65</td>
+                          <td>2008/09/26</td>
+                          <td>$645,750</td>
+                        </tr>
+                        <tr>
+                          <td>Olivia Liang</td>
+                          <td>Support Engineer</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2011/02/03</td>
+                          <td>$234,500</td>
+                        </tr>
+                        <tr>
+                          <td>Bruno Nash</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>38</td>
+                          <td>2011/05/03</td>
+                          <td>$163,500</td>
+                        </tr>
+                        <tr>
+                          <td>Sakura Yamamoto</td>
+                          <td>Support Engineer</td>
+                          <td>Tokyo</td>
+                          <td>37</td>
+                          <td>2009/08/19</td>
+                          <td>$139,575</td>
+                        </tr>
+                        <tr>
+                          <td>Thor Walton</td>
+                          <td>Developer</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2013/08/11</td>
+                          <td>$98,540</td>
+                        </tr>
+                        <tr>
+                          <td>Finn Camacho</td>
+                          <td>Support Engineer</td>
+                          <td>San Francisco</td>
+                          <td>47</td>
+                          <td>2009/07/07</td>
+                          <td>$87,500</td>
+                        </tr>
+                        <tr>
+                          <td>Serge Baldwin</td>
+                          <td>Data Coordinator</td>
+                          <td>Singapore</td>
+                          <td>64</td>
+                          <td>2012/04/09</td>
+                          <td>$138,575</td>
+                        </tr>
+                        <tr>
+                          <td>Zenaida Frank</td>
+                          <td>Software Engineer</td>
+                          <td>New York</td>
+                          <td>63</td>
+                          <td>2010/01/04</td>
+                          <td>$125,250</td>
+                        </tr>
+                        <tr>
+                          <td>Zorita Serrano</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>56</td>
+                          <td>2012/06/01</td>
+                          <td>$115,000</td>
+                        </tr>
+                        <tr>
+                          <td>Jennifer Acosta</td>
+                          <td>Junior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>43</td>
+                          <td>2013/02/01</td>
+                          <td>$75,650</td>
+                        </tr>
+                        <tr>
+                          <td>Cara Stevens</td>
+                          <td>Sales Assistant</td>
+                          <td>New York</td>
+                          <td>46</td>
+                          <td>2011/12/06</td>
+                          <td>$145,600</td>
+                        </tr>
+                        <tr>
+                          <td>Hermione Butler</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2011/03/21</td>
+                          <td>$356,250</td>
+                        </tr>
+                        <tr>
+                          <td>Lael Greer</td>
+                          <td>Systems Administrator</td>
+                          <td>London</td>
+                          <td>21</td>
+                          <td>2009/02/27</td>
+                          <td>$103,500</td>
+                        </tr>
+                        <tr>
+                          <td>Jonas Alexander</td>
+                          <td>Developer</td>
+                          <td>San Francisco</td>
+                          <td>30</td>
+                          <td>2010/07/14</td>
+                          <td>$86,500</td>
+                        </tr>
+                        <tr>
+                          <td>Shad Decker</td>
+                          <td>Regional Director</td>
+                          <td>Edinburgh</td>
+                          <td>51</td>
+                          <td>2008/11/13</td>
+                          <td>$183,000</td>
+                        </tr>
+                        <tr>
+                          <td>Michael Bruce</td>
+                          <td>Javascript Developer</td>
+                          <td>Singapore</td>
+                          <td>29</td>
+                          <td>2011/06/27</td>
+                          <td>$183,000</td>
+                        </tr>
+                        <tr>
+                          <td>Donna Snider</td>
+                          <td>Customer Support</td>
+                          <td>New York</td>
+                          <td>27</td>
+                          <td>2011/01/25</td>
+                          <td>$112,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- end card body-->
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col-->
+            </div>
+            <!-- end row-->
+
+            <!-- end row-->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- content -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <script>
+                    document.write(new Date().getFullYear())
+                  </script>
+                  © valledev
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end Footer -->
+      </div>
+      <!-- End Page content -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- App js -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- third party js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables js -->
+    <script src="assets/js/pages/datatables.js"></script>
+  </body>
+</html>
